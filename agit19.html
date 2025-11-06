@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Pastel Aesthetic</title>
+  <style>
+    /* 🎨 Palet warna pastel */
+    :root {
+      --pink: #ffdce5;
+      --mint: #d7fbe8;
+      --lavender: #e7e6ff;
+      --cream: #fff8e7;
+      --text-dark: #444;
+      --text-light: #666;
+      --white:var(--lavender);
+    }
+
+    /* 🧁 Reset & dasar */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--pink), var(--mint));
+      color: var(--text-dark);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 10px 20px 60px;
+      background: linear-gradient(120deg, var(--lavender), var(--pink));
+      border-bottom-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      color: #333;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: var(--text-light);
+      margin-top: 10px;
+    }
+
+    /* 🌸 Tata letak konten */
+    main {
+      max-width: 1100px;
+      margin: -60px auto 60px;
+      padding: 0 20px;
+    }
+
+    section {
+      background: var(--white);
+      border-radius: 25px;
+      padding: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: #333;
+      border-left: 6px solid var(--mint);
+      padding-left: 15px;
+      font-size: 1.8em;
+      margin-bottom: 25px;
+    }
+
+    /* 💫 Tentang Saya */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .about img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    /* 🧁 Grid Proyek */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      background: var(--lavender);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .project p {
+      color: var(--text-light);
+      font-size: 0.95em;
+    }
+
+    /* 🌷 Kontak */
+    .contact {
+      text-align: center;
+      background: var(--cream);
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px 15px;
+      color: #6a5acd;
+      font-weight: 600;
+      text-decoration: none;
+      background: var(--white);
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact a:hover {
+      background: var(--mint);
+      transform: translateY(-3px);
+    }
+
+    footer {
+      text-align: center;
+      color: #777;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    /* 📱 Responsif */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.4em;
+      }
+
+      .about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about img {
+        width: 160px;
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <br>
+    
+    <h1>Sherda</h1>
+    <p>Desainer Visual | Pecinta Warna Pastel ✨</p>
+  </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+  <main>
+    <section class="about">
+      <img src="https://i.pinimg.com/736x/f7/65/89/f765897e8a2fadad5c61f64614c2d6bc.jpg" alt="Foto Profil">
+      <div class="about-text">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang desainer visual dengan fokus pada keindahan lembut, keseimbangan warna pastel, dan nuansa visual yang menenangkan. Saya percaya bahwa estetika bukan hanya soal tampilan — tapi juga perasaan yang ditinggalkan.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Proyek Saya</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>🌷 Branding “Luna Studio”</h3>
+          <p>Desain identitas brand dengan konsep dreamy dan minimalis, menggabungkan pastel pink dan lavender.</p>
+        </div>
+        <div class="project">
+          <h3>🧁 Ilustrasi “Soft Dreams”</h3>
+          <p>Ilustrasi digital bertema mimpi lembut dengan tekstur lembut dan nuansa warna menenangkan.</p>
+        </div>
+        <div class="project">
+          <h3>🍃 Web Design “CalmSpace”</h3>
+          <p>Desain antarmuka website relaksasi dengan layout ringan dan warna-warna pastel alami.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Kontak</h2>
+      <p>Ingin berkolaborasi? Yuk, terhubung! 💌</p>
+      <a href="mailto:kamu@email.com">Email</a>
+      <a href="https://instagram.com/wrdamd_" target="_blank">wrdamd_</a>
+      <a href="https://instagram.com/dshryndar_" target="_blank">dshryndar_</a>
+      <a href="https://www.behance.net/" target="_blank">Behance</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Nama Kamu — Dibuat dengan cinta & warna pastel 💕
+  </footer>
+</body>
+</html>

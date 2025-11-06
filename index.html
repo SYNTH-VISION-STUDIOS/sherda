@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan Estetik</title>
+    <style>
+        /* Palet Warna Estetik */
+        :root {
+            --primary-color: #A8DADC; /* Biru Muda/Mint - untuk latar belakang */
+            --secondary-color: #457B9D; /* Biru Tua - untuk teks utama */
+            --accent-color: #E63946; /* Merah Marun/Terakota - untuk aksen/hover */
+            --background-content: #F1FAEE; /* Putih Gading - untuk kotak konten */
+            --text-color: #1D3557; /* Biru Sangat Tua - untuk teks paragraf */
+        }
+
+        /* Styling Body */
+        body {
+            background-color: var(--primary-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Container Utama */
+        .container {
+            background-color: var(--background-content);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Styling Heading */
+        h1 {
+            color: var(--secondary-color);
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Styling Paragraf */
+        p {
+            font-size: 1.1em;
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Styling Link */
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            display: block; /* Agar link berada di baris baru */
+            margin-top: 10px;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        /* Styling Tombol */
+        button {
+            background-color: var(--secondary-color);
+            color: var(--background-content);
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        /* Marquee */
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background-color: var(--secondary-color);
+            color: var(--background-content);
+            padding: 8px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .marquee p {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marqueeAnim 15s linear infinite; /* Kecepatan sedikit diperlambat */
+            color: inherit; /* Mengambil warna teks dari parent (marquee) */
+            margin: 0;
+        }
+
+        @keyframes marqueeAnim {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="marquee">
+        <p>Selamat datang di halaman estetik! ✨ Teks ini bergerak untuk kesan dinamis. Halo Warda dan Dwi! 🌹</p>
+    </div>
+
+    <div class="container">
+        <h1 id="judul">Halo Dunia!</h1>
+        <p>Ini adalah paragraf pertama saya. Tampilan ini didesain menggunakan palet warna yang tenang dan elegan untuk menciptakan nuansa yang estetik.</p>
+        <a href="https://google.com" target="_blank">Kunjungi Google</a>
+        <button onclick="ubahteks()">Ganti Judul</button>
+    </div>
+
+    <script>
+        function ubahteks() {
+            document.getElementById("judul").innerText = "ngapa lu bzir";
+        }
+    </script>
+</body>
+</html>
